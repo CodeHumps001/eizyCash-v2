@@ -63,7 +63,6 @@ export default function SignUpForm() {
       />
 
       <Button type="submit">Create Account</Button>
-      <p>{users.length}</p>
     </form>
   );
 }
