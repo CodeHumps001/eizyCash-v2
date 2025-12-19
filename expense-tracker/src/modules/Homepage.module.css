@@ -1,0 +1,116 @@
+.homepage {
+  width: 100%;
+  height: auto;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.homepage .hero {
+  padding: 100px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  /* height: 80vh; */
+}
+.homepage .hero h2 {
+  font-size: clamp(6rem, 8vw, 10rem);
+  line-height: 1;
+  font-weight: 900;
+  text-align: center;
+  color: #f8f9fa;
+  background: linear-gradient(to right, #000 30%, #ffe066 100%);
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  filter: drop-shadow(0px 4px 20px rgba(162, 155, 254, 0.2));
+  animation: fun ease 25s infinite;
+  transition: all 0.4s;
+}
+@keyframes fun {
+  0% {
+    background: linear-gradient(to left, #7048e8 30%, #ffe066 100%);
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    filter: drop-shadow(0px 4px 20px rgba(215, 213, 236, 0.2));
+  }
+  100% {
+    background: linear-gradient(to right, #000 30%, #ffe066 100%);
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    filter: drop-shadow(0px 4px 20px rgba(162, 155, 254, 0.2));
+  }
+}
+.homepage .hero h2 span {
+  color: #7048e8;
+}
+
+.homepage .hero p {
+  max-width: clamp(90%, 8vw, 40%);
+  line-height: 1.5;
+  text-align: center;
+  font-size: clamp(1.5rem, 4vh, 2.8rem);
+  font-weight: 400;
+  color: #495057;
+}
+
+.homepage .hero a:link,
+.homepage .hero a:visited {
+  text-decoration: none;
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding: 15px 25px;
+  background-image: linear-gradient(to right, #5f3dc4 30%, #b197fc 100%);
+  color: #f3f0ff;
+  border-radius: 100px;
+}
+.homepage .hero a:link:hover,
+.homepage .hero a:visited:hover {
+  background-image: linear-gradient(to left, #5f3dc9 30%, #b197ff 100%);
+}
+
+.homepage .how {
+  width: 100%;
+
+  padding: 50px 20px;
+  background-color: #f1f3f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+.homepage .how h2 {
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  font-weight: 800;
+  text-align: center;
+  line-height: 1.1;
+  background: linear-gradient(to right, #000 30%, #ffe066 100%);
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  filter: drop-shadow(0px 4px 20px rgba(162, 155, 254, 0.2));
+
+  margin-bottom: 3rem;
+}
+.homepage .how .steps {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}

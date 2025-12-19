@@ -1,0 +1,15 @@
+.btn {
+  width: 300px;
+  padding: 20px;
+  border-radius: 200px;
+  border: none;
+  color: #f3f0ff;
+  font-size: 2rem;
+  font-weight: 800;
+  background-image: linear-gradient(to right, #5f3dc9 30%, #b197ff 100%);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-image: linear-gradient(to left, #5f3dc9 30%, #b197ff 100%);
+}
